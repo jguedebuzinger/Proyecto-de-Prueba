@@ -1,0 +1,292 @@
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+body{
+    background: url(../img/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+
+/*TITLE*/
+
+#title{
+	text-align: center;
+	text-transform: uppercase;
+	color: white; 	
+}
+
+#title h1{
+    font-size: 9em;
+    margin: 4% 0 2%;
+}
+
+
+/*VIDEO*/
+
+#video{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#video-main{
+    width:100%;
+    max-width: 900px;
+    margin:auto;
+}
+
+#video-yt{
+  height:0px;
+  width:100%;
+  
+  padding-top:56.25%;
+  position:relative;
+}
+
+iframe{
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+}
+
+
+/*SHARE RRSS*/
+
+#share-rrss{
+    position:absolute;
+    left:3%;
+    top:20%;
+    z-index: 100;
+}
+
+#share-rrss ul{
+    text-decoration: none;
+    list-style-type: none;   
+}
+
+#share-rrss ul li{
+    margin:5px;
+    text-align: center; 
+}
+
+#share-rrss ul #share-logo{
+  display:block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.8em;
+  color: rgba(34, 34, 34);
+
+}
+
+#share-rrss ul li a {
+  background: rgba(34, 34, 34, 0.85);
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.5em;
+  color: #FFF;
+  -moz-transition: width 0.25s;
+  -webkit-transition: width 0.25s;
+  -o-transition: width 0.25s;
+  -ms-transition: width 0.25s;
+  transition: width 0.25s;
+ }
+
+#share-rrss ul li a:hover {
+  color: #C3D500;
+  width:55px;
+}
+
+
+/*LOGOS*/
+
+#logos{
+  margin-bottom:10px;
+}
+
+#logos span img{
+    margin:0 auto;
+}
+
+#logos #formigal img{
+  max-height: 95px;
+}
+
+#logos #muwom img{
+  max-height: 95px;
+}
+
+#logos #itunes img{
+    margin-bottom: 10px;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media only screen and (max-width: 1200px) {
+
+  #title h1{ 
+    margin: 5% 0 5%;
+  }
+
+  #video-main{
+    padding: 0 60px;
+  }
+  #share-rrss{
+    left:0%;
+}
+
+}
+
+@media only screen and (max-width: 992px) {
+
+  #title h1{ 
+    margin: 10% 0 10%;
+  }
+
+  #video-main{
+    padding: 0 40px;
+  }
+
+  #share-rrss{
+    left:-5%;
+    top:15%;
+  }
+
+@media only screen and (max-width: 768px) {
+
+  #title h1{
+    font-size: 8em;  
+    margin: 15% 0 10%;
+  }
+
+  #logos #formigal img{
+    max-height: 70px;
+  }
+
+  #logos #muwom img{
+    max-height: 70px;
+  }
+
+  #logos #itunes img{
+      max-height: 30px;
+  }
+  #logos #spotify img{
+      max-height: 30px;
+  }
+
+}
+
+
+@media only screen and (max-width: 630px) {
+ 
+  #title h1{
+    font-size: 6em; 
+    margin: 15% 0 10%;
+  }
+  #video-main{
+    padding: 0;
+  }
+  #share-rrss{
+    position:relative;
+    left:0%;
+  }
+  #share-rrss ul{
+   text-align: left;
+   padding: 0;
+  }
+
+  #share-rrss ul li{
+    text-align: center;
+    display:inline-block;
+    margin:2px;
+  }
+
+  #share-rrss ul li a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 1.4em;
+  }
+
+  #share-rrss ul li a:hover {
+    width: 35px;
+  }
+
+}
+
+@media only screen and (max-width: 460px) {
+
+#title h1{
+        font-size: 5em;  
+    }
+}
+
+@media only screen and (max-width: 350px) {
+
+#title h1{
+        font-size: 4em;  
+    }
+}
+
+
